@@ -1,0 +1,23 @@
+{
+  "name": "kyrosql",
+  "version": "0.0.6",
+  "description": "SQL-first TypeScript code generator for PostgreSQL",
+  "main": "dist/index.js",
+  "bin": {
+    "kyrosql": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --external:chokidar",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "chokidar": "^5.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "typescript": "^5.3.0"
+  }
+}

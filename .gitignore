@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Compiled JS artifacts next to TS sources (tsc leftovers)
+packages/**/*.js
+packages/**/*.js.map
+packages/**/*.d.ts
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

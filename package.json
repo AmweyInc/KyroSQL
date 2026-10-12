@@ -1,0 +1,23 @@
+{
+  "name": "kyrosql",
+  "version": "0.0.1",
+  "description": "SQL-first TypeScript code generator focused on performance, type safety, and predictable queries.",
+  "license": "ISC",
+  "author": "Amwey",
+  "type": "commonjs",
+  "workspaces": [
+    "packages/*"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev --workspace=kyrosql",
+    "build": "npm run build --workspace=@kyrosql/core && npm run build --workspace=kyrosql",
+    "test": "tsx --test \"test/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "chokidar": "^5.0.0",
+    "tsx": "^4.21.0"
+  },
+  "dependencies": {}
+}
